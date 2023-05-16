@@ -665,7 +665,8 @@ def _sub_segment_subduction_convergence(
                 math.degrees(arc_length),
                 math.degrees(trench_normal_azimuth),
                 subducting_plate_id,
-                trench_plate_id)
+                trench_plate_id,
+                (trench_normal))
         
         if output_distance_to_nearest_edge_of_trench or output_distance_to_start_edge_of_trench:
             # Increase by distance from previous segment mid-point to current segment mid-point.
